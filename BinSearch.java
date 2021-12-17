@@ -27,14 +27,13 @@ public class BinSearch
 
       // target found
       if(a[m] == target){
-            tPos = m;
             end = System.currentTimeMillis();
     	    System.out.println(end);
             timeTaken = end - start;
             System.out.println(timeTaken);
             
             System.out.println(tPos);
-            return tPos;
+            return m;
       }
 
       // value at mid index higher than target
@@ -42,7 +41,7 @@ public class BinSearch
             hi = m - 1;
       }  
       // value at mid index lower than target
-      else{
+      else
             lo = m + 1;
       }
     }
@@ -56,14 +55,35 @@ public class BinSearch
         System.out.println(tPos);
         return tPos;
     }
-    end = System.currentTimeMillis();
-    System.out.println(end);
-    timeTaken = end - start;
-    System.out.println(timeTaken);
+    end = system.currenttimemillis();
+    system.out.println(end);
+    timetaken = end - start;
+    system.out.println(timetaken);
     
     System.out.println(tPos);
     return tPos;
   }//end binSearchIter
+
+  public static int binSearchRec( Comparable[] a, Comparable target, int lo, int hi )
+  {
+    int tPos = -1; //init return var to flag value -1
+    int m = (lo + hi) / 2; //init mid pos var
+    int comparison = a[m].compareTo( target );
+	start = System.currentTimeMillis();
+	System.out.println(start);
+
+
+    if ( comparison == 0 )
+      return m;
+    else if ( lo != hi ) {
+      if ( comparison < 0 )
+	lo = m + 1;
+      else
+	hi = m - 1;
+      return binSearchRec( a, target, lo, hi );
+    }
+    return tPos;
+  }//end binSearchRec
   
 }
 

@@ -1,8 +1,8 @@
 public class SearchDriver{
 
     public static void main(String[] args){
-        int[] bob = new int[9999999];
-        int target = ((int)(Math.random()*9999999));
+        int[] bob = new int[999999999];
+        int target = ((int)(Math.random()*999999999));
         
         for(int i = 0; i < bob.length; i++){
             bob[i] = i;
