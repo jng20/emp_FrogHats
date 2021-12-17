@@ -9,7 +9,7 @@ LinTime, the number that counts how much time it takes to search, starts now.
 Immediately after Linear Search returns, time stops. 
 The process is repeated for BinTime for Binary Search.
 
-For the actual code, the array will have many many more elements and the experiment will be ran multiple times iwth randomized targets, all of which use the same array.
+For the actual code, the array will have many many more elements and the experiment will be ran multiple times with randomized targets, all of which use the same array.
 
 Additional Repetitions of the Experiment:
 Each element in two separate arrays can store times for each individual experiment:
