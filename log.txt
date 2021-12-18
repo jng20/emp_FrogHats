@@ -1,0 +1,11 @@
+#Test 1
+* Binary search and linear search
+** Both methods have instance variables start, end, timeTaken. They're all long variables.
+** We basically copied and pasted our binary and linear search methods from hw 48
+** The only change was that we take the time at the start and end of the methods
+** timeTaken is just end minus start
+
+*SearchDriver
+** Created an integer array of size 999,999,999 and filled each index with values from 0 to 999,999,998 in order
+** Created an int target that creates an integer from 0 to 999,999,998 inclusive
+** Run binary search and linear search on the array while looking for the same target
