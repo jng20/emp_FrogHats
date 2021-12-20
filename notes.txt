@@ -5,3 +5,21 @@
 * Should test when target is not in the array
 * Should add a way to calculate average time of all the trials
 * don't know any other test other than repeating this one
+
+#Notes from Update 1
+* Exception in thread "main" java.lang.OutOfMemoryError: Java heap space when using Integer[999_999_999]
+
+# Notes from Update 2
+* Exception in thread "main" java.lang.ArrayStoreException: java.lang.Integer
+        at SearchDriver.main(SearchDriver.java:8)
+* storing wrong type in the array
+*Couldn't get long to work and don't know why
+SearchDriver.java:8: error: incompatible types: possible lossy conversion from long to int
+            bob[i] = (long)i;
+
+# Notes from Update 3
+#Binary and Linear Search
+* commented out print statements
+*NOW binSearch TAKES 0 TIME WTF
+*LinSearch still takes the same time
+* Do print statements make run time that much longer ???

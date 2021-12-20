@@ -9,3 +9,48 @@
 * Created an integer array of size 999,999,999 and filled each index with values from 0 to 999,999,998 in order
 * Created an int target that creates an integer from 0 to 999,999,998 inclusive
 * Run binary search and linear search on the array while looking for the same target
+
+
+# Update 1
+## Binary and Linear Search
+* Made both classes take an Comparable as the parameters
+* Called binSearchIter just binSearch
+
+## SearchDriver
+* Changed binSearchIter to binSearch
+* Changed stuff to use Comparable
+* java.lang.OutOfMemoryError: Java heap space when using Integer[999_999_999]
+
+# Update 2
+#Binary and Linear Search
+* added an if statement to Binary because sometimes binary couldn't find the target
+
+# SearchDriver
+* Trying Long[999_999_999]
+Exception in thread "main" java.lang.ArrayStoreException: java.lang.Integer
+        at SearchDriver.main(SearchDriver.java:8)
+* went back to int and Integer in the end
+* changed a return statement to return m when target is found not tPos(aka -1)
+* Binary Search takes 21-22 milliseconds but linear search fluctuates from 2-25
+
+# Update 3
+#Binary and Linear Search
+* they return timeTaken now
+* commented out print statements
+
+# SearchDriver
+*NOW binSearch TAKES 0 TIME WTF
+*LinSearch still takes the same time
+*
+
+# Update 4
+#Binary and Linear Search
+* testing run time with and without print statements
+
+# SearchDriver
+*BinSearch with print statements: only the first trial takes like 21 milliseconds but every trial after is 0 and rarely 1
+*BinSearch without print statements: All 0
+*LinSearch with print statements: Still 0 -25ish
+*LinSearch without print statements: still 0 -20ish
+
+Confusion is over 9000 rn

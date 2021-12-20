@@ -2,35 +2,35 @@ import java.lang.System;
 public class LinSearch
 {
   long start, end, timeTaken;
-  
+
   public LinSearch(){
   	start = 0;
   	end = 0;
   	timeTaken = 0;
   }
- 
-  
-  public int linSearch ( int[] a, int target )
+
+
+  public long linSearch ( Comparable[] a, Comparable target )
   {
     int tPos = -1;
     int i = 0;
     start = System.currentTimeMillis();
-    System.out.println(start);
-    
+  //  System.out.println("start: " + start);
+
     while ( i < a.length ) {
-      if ( a[i] == target ) {
+      if ( a[i].compareTo(target) == 0 ) {
         tPos = i;
         break;
       }
       i++;
     }
-    
+
     end = System.currentTimeMillis();
-    System.out.println(end);
+  //  System.out.println("end: " + end);
     timeTaken = end - start;
-    System.out.println(timeTaken);
-    
-    System.out.println(tPos);
-    return tPos;
+  //  System.out.println("time taken: " + timeTaken);
+
+  //  System.out.println("target at: " + tPos);
+    return timeTaken;
   }
 }
