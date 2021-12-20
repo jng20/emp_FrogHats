@@ -1,3 +1,8 @@
+* Team Turtle Hats
+  * Jacob Ng Kevin Cheng Hamim Seam
+  * APCS
+  * L03 -- Get Empirical
+
 # Notes from test 1
 * We might have to convert stuff to long for bigger sample size
 * On the array of size 999,999,999, binary search found the target about 6 milliseconds faster on average
