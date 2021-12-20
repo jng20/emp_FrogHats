@@ -54,3 +54,15 @@ Exception in thread "main" java.lang.ArrayStoreException: java.lang.Integer
 *LinSearch without print statements: still 0 -20ish
 
 Confusion is over 9000 rn
+
+
+# Update 5
+#Binary and Linear Search
+
+# SearchDriver
+* created bob2 an array of size 10
+* ran the 20 trials on bob2 and both search algorithms were avg time 0
+* Tested the worst case scenarios for bob and bob2
+* binary search took 0 time for both bob and bob2 for the worst case scenarios
+* Linear search took 0 time for bob2 and 15/16 time for bob for the worst case scenarios
+
