@@ -23,3 +23,4 @@
 * Test 4 was pretty much the same as test 3 but used the int[10] array.
 
 # GALLERY TOUR
+* Another test could be record the time taken after the 20 test loop and compare the linear and binary results instead of comparing the time taken after each individual tests.
