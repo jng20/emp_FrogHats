@@ -21,3 +21,5 @@
 * Test 2 was pretty much the same as test 1 but we used a small array int[10].
 * Test 3 tested the worst case scenario for both linear and binary search for the int[9_999_999] (basically find the last integer).
 * Test 4 was pretty much the same as test 3 but used the int[10] array.
+
+# GALLERY TOUR
